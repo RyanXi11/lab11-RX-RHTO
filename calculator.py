@@ -23,10 +23,15 @@ def log(a, b):
     return math.log(b, a)
 def exp(a, b):
     return a ** b
+<<<<<<< HEAD
 def square_root(a):
     if a < 0:
         raise ValueError
     return math.sqrt(a)
 
 
+=======
+def hyp(a, b):
+    return (a ** 2 + b ** 2) ** 0.5
+>>>>>>> 425dd1b7b105fba50859cedec933b929feccf43f
 
