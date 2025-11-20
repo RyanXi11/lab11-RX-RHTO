@@ -6,7 +6,7 @@ One function per operation, in order.
 """
 import math
 
-# First example
+
 def add(a, b): 
     return a + b
 def sub(a, b):
@@ -29,4 +29,5 @@ def square_root(a):
     return a ** 0.5
 def hyp(a, b):
     return (a ** 2 + b ** 2) ** 0.5
+
 
