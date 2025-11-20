@@ -1,3 +1,8 @@
+"""https://github.com/RyanXi11/lab11-RX-RHTO/tree/main
+Partner 1: Ryan Xi
+Partner 2: Rafael Hitoshi Teixeira Oura
+"""
+
 import unittest
 from calculator import *
 
@@ -10,9 +15,9 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(10, 5), 5)
-        self.assertEqual(sub(0, 5), -5)
-        self.assertEqual(sub(10, -5), 15)
+        self.assertEqual(subtract(10, 5), 5)
+        self.assertEqual(subtract(0, 5), -5)
+        self.assertEqual(subtract(10, -5), 15)
 
     # ##########################
 
@@ -32,14 +37,14 @@ class TestCalculator(unittest.TestCase):
         self.assertRaises(ZeroDivisionError, div(0, 5))
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(10, 10), 1)
-        self.assertEqual(log(2,64), 6)
-        self.assertEqual(log(2, 1), 0)
+        self.assertEqual(logarithm(10, 10), 1)
+        self.assertEqual(logarithm(2,64), 6)
+        self.assertEqual(logarithm(2, 1), 0)
 
 
     def test_log_invalid_base(self): # 1 assertion
-        self.assertRaises(ValueError, log(10, -2))
-        self.assertRaises(ValueError, log(1, 10))
+        self.assertRaises(ValueError, logarithm(10, -2))
+        self.assertRaises(ValueError, logarithm(1, 10))
 
     # ##########################
     
@@ -49,12 +54,12 @@ class TestCalculator(unittest.TestCase):
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
     #     fill in
-        self.assertRaises(ValueError, log, 5, 0)
+        self.assertRaises(ValueError, logarithm, 5, 0)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(hyp(5, 12), 13)
-        self.assertEqual(hyp(3, 4, ), 5)
-        self.assertEqual(hyp(6, 8,), 10)
+        self.assertEqual(hypotenuse(5, 12), 13)
+        self.assertEqual(hypotenuse(3, 4, ), 5)
+        self.assertEqual(hypotenuse(6, 8,), 10)
 
 
 
