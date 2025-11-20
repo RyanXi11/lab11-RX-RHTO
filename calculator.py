@@ -3,6 +3,11 @@ calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
+
+https://github.com/RyanXi11/lab11-RX-RHTO/tree/main
+Partner 1: Ryan Xi
+Partner 2: Rafael Hitoshi Teixeira Oura
+
 """
 import math
 
@@ -19,6 +24,8 @@ def div(a, b):
     return b / a
 def log(a, b):
     if b <= 0:
+        raise ValueError
+    if a <= 0 or a == 1:
         raise ValueError
     return math.log(b, a)
 def exp(a, b):
